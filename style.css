@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+body {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+}
+
+.main {
+    width: 50%;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.display {
+    width: 95%;
+    height: 8vh;
+    font-size: 350%;
+    border-radius: 10px;
+    margin: 3vh 0 1vh 0;
+    background-color: #FAEED1;
+    color: #000000;
+    font-family: "Anta", sans-serif;
+    overflow: hidden;
+}
+
+.main input {
+    width: 20vw;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 20px;
+    border: 1px solid #000000;
+    border-radius: 3px;
+    background-color: #ff96ad;
+}
+
+.main .keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    
+}
+
+#equalbtn {
+    grid-column: 1/5;
+    border-radius: 25px;
+}
+
+.main button {
+    padding: 3vh;
+    font-size: 30px;
+    border: 1px solid black;
+    border-radius: 50%;
+    cursor: pointer;
+    border-color: black;
+    justify-content: space-evenly;
+    gap: 6% 6% 6% 6%;
+}
+
+.main button:hover {
+    background-color: #ff96ad;
+    box-shadow: 0 0 5px #ff96ad, 0 0 25px #ff96ad, 0 0 50px #ff96ad, 0 0 200px #ff96ad;
+
+
+}
+
+
+
+@media screen and (min-width:600px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .main {
+        border: 2px solid black;
+        border-radius: 10px;
+        width: 40%;
+        height: 80vh;
+
+    }
+
+    .display {
+        width: 80%;
+        margin: 0 0 2vh 0;
+    }
+
+    .keys {
+        height: 85%;
+        width: 80%;
+    }
+
+    button {
+        font-size: 35px;
+        padding: 15px;
+    }
+
+    h1 {
+        margin: 2vh 0;
+        text-align: center;
+    }
+
+}

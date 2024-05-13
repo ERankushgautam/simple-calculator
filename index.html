@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simple calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>SIMPLE CALCULATOR</h1>
+
+    <div class="main">
+        <!-- <p>calculate your problem</p> -->
+        <input type="text" class="display" readonly>
+        <div class="keys">
+            <button onclick="appendValue('9')" class="nums">9</button>
+            <button onclick="appendValue('8')" class="nums">8</button>
+            <button onclick="appendValue('7')" class="nums">7</button>
+            <button onclick="appendValue('+')" class="operators">+</button>
+            <button onclick="appendValue('6')" class="nums">6</button>
+            <button onclick="appendValue('5')" class="nums">5</button>
+            <button onclick="appendValue('4')" class="nums">4</button>
+            <button onclick="appendValue('-')" class="operators">-</button>
+            <button onclick="appendValue('3')" class="nums">3</button>
+            <button onclick="appendValue('2')" class="nums">2</button>
+            <button onclick="appendValue('1')" class="nums">1</button>
+            <button onclick="appendValue('*')" class="operators">X</button>
+            <button onclick="clearDisplay()" class="operators">AC</button>
+            <button onclick="appendValue('0')" class="nums">0</button>
+            <button onclick="deleteValue()" class="operators">DL</button>
+            <button onclick="appendValue('/')" class="operators">/</button>
+            <button onclick="calculate()" class="operators" id="equalbtn">=</button>
+
+        </div>
+    </div>
+    <div class="copy">
+        <p>(2024-april)&copy; ANKUSH GAUTAM</p>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

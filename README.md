@@ -1,2 +1,2 @@
 # simple-calculator
-## dev = Ankush Gautam
+## dev = Ankush Gautam  b tech 

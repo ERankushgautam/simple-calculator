@@ -1,75 +1,69 @@
-@import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
-
 * {
     margin: 0;
     padding: 0;
+    background-color: #CDE8E5;
     overflow: hidden;
-    font-family: Arial, sans-serif;
-}
-
-body {
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0px;
-    display: flex;
-    flex-direction: column;
-    gap: 5vh;
-}
-
-.main {
-    width: 50%;
-    border: 2px solid #000000;
-    border-radius: 5px;
-    padding: 10px;
-    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .display {
     width: 95%;
     height: 8vh;
-    font-size: 350%;
-    border-radius: 10px;
+    font-size: 200%;
+    border-radius: 5px;
     margin: 3vh 0 1vh 0;
-    background-color: #FAEED1;
-    color: #000000;
-    font-family: "Anta", sans-serif;
-    overflow: hidden;
+    background-color: #EEF7FF;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+
 }
 
-.main input {
-    width: 20vw;
-    margin-bottom: 10px;
-    padding: 10px;
-    font-size: 20px;
-    border: 1px solid #000000;
-    border-radius: 3px;
-    background-color: #ff96ad;
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-.main .keys {
+.keys {
+    height: 60vh;
+    width: 95%;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 5px;
-    
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 20% 20% 20% 20%;
+    gap: 6% 5%;
+}
+
+button {
+    font-size: 100%;
+    padding: 3vw;
+    border: 1px solid black;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nums {
+    border-radius: 50%;
+    background-color: #7AB2B2;
+    color: rgb(255, 255, 255);
+
+}
+
+.operators {
+    border-radius: 50%;
+    background-color: #4D869C;
+    color: black;
 }
 
 #equalbtn {
     grid-column: 1/5;
-    border-radius: 25px;
+
 }
 
-.main button {
-    padding: 3vh;
-    font-size: 30px;
-    border: 1px solid black;
-    border-radius: 50%;
-    cursor: pointer;
-    border-color: black;
-    justify-content: space-evenly;
-    gap: 6% 6% 6% 6%;
+.copy p {
+    margin: 2vw 0;
+    text-align: center;
 }
 
 .main button:hover {
@@ -78,7 +72,6 @@ body {
 
 
 }
-
 
 
 @media screen and (min-width:600px) {
@@ -108,8 +101,8 @@ body {
     }
 
     button {
-        font-size: 35px;
-        padding: 15px;
+        font-size: 30px;
+        padding: 10px;
     }
 
     h1 {
